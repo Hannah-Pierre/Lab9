@@ -21,12 +21,14 @@ usersick = raw_input()
 print "have you recently travelled to West Africa? 1 for no 2 for yes"
 userafrica = raw_input()
 
-
-while() :
+userpatients = raw_input()
+while(userpatients == 2) :
     if usertemp in patientinfo > 105 :
         print "you're sick" 
     if usertemp in patientinfo > 102 and usersick == 2 :
         print "you're sick"
     if usertemp in patientinfo > 100 or usersick in patientinfo == 2 and userafrica in patientinfo == 2 :
         print "you're sick"
-        
+print "you're not sick"
+print "are there any more patients? 1 for no 2 for yes"
+userpatients = raw_input()
