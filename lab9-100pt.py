@@ -14,15 +14,17 @@
 # - A temperature of over 102F and they have been sick in the last 24 hours
 # - A temperature over 100, OR they've been sick in the last 24 hours, AND they've recently travelled to West Africa.
 Patientinfo = []
-print "what is your temperature?"
-usertemp = raw_input()
-print "Have you been sick in the last 24 hours? 1 for no 2 for yes."
-usersick = raw_input()
-print "have you recently travelled to West Africa? 1 for no 2 for yes"
-userafrica = raw_input()
 
+
+keepgoing = 1
 userpatients = raw_input()
-while(userpatients == 2) :
+while(keepgoing == 2) :
+print "what is your temperature?"
+    usertemp = raw_input()
+print "Have you been sick in the last 24 hours? 1 for no 2 for yes."
+    usersick = raw_input()
+print "have you recently travelled to West Africa? 1 for no 2 for yes"
+    userafrica = raw_input()
     if usertemp in patientinfo > 105 :
         print "you're sick" 
     if usertemp in patientinfo > 102 and usersick == 2 :
@@ -31,4 +33,5 @@ while(userpatients == 2) :
         print "you're sick"
 print "you're not sick"
 print "are there any more patients? 1 for no 2 for yes"
-userpatients = raw_input()
+userpatients = int(raw_input())
+keepgoiong = userpatients
